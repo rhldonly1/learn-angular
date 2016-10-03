@@ -1,0 +1,62 @@
+<html>
+<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<title> Questions Answer</title>
+		 <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="header">
+	<h1> Single Page Application</h1>-sponsored by PepsiCo Ltd.
+</div>
+<div id="body">
+	<form name="myForm">
+		<div id="userName">
+			<p style="font-style: oblique;font-family: 'Times New Roman', Times, serif;color:grey; font-size: 22px;">
+				Tell us Your Name
+			</p>
+			<input type="text" name="userName" id="userName" placeholder=" Full Name" required ><br />
+			<button type="button" onclick="this.parentNode.style.display = 'none'; questionMain.style.display='block'; seeName(); saveResult();" id="btn">Start Now</button>
+		</div>
+	</form>
+	<div id="questionMain">
+		<div id="userN">
+		
+		</div>
+		<div id="questionNo">
+			
+		</div>
+		<br /><br /><br />
+		<span id="question">
+			
+		</span><br /><br /><br />
+			<input type="radio" name="QuestionQ" id="optA" value="opt1" onclick="saveResult('opt1');">
+		<label for="optA">
+			<span id="opt1"> 
+			</span>
+		</label>
+		 <input type="radio" name="QuestionQ" id="optB" value="opt2" onclick="saveResult('opt2')"> 
+		 <label for="optB">
+			<span id="opt2">
+			</span>
+		</label>
+		 <input type="radio" name="QuestionQ" id="optC" value="opt3" onclick="saveResult('opt3')">
+		<label for="optC">
+			<span id="opt3">
+			</span>
+		</label>
+		 <input type="radio" name="QuestionQ" id="optD" value="opt4" onclick="saveResult('opt4')">
+		<label for="optD">
+			<span id="opt4">
+			</span>
+		</label>
+	</div>
+</div>
+<div id="footer">
+Single chance for single question
+</div>
+
+ <script src="spa.js"></script>
+</body>
+</html>
